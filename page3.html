@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Noto+Serif+Thai:wdth,wght@88.6,396&display=swap');
+        body {
+            font-family: "Mitr", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9; 
+            color: #b35f86;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(238, 77, 176, 0.578);
+            border-radius: 8px;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #f069b3;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        header img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            margin-right: 20px;
+        }
+        header h1 {
+            color: #f069b3;
+            margin: 0;
+            font-size: 5em;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: #a6295d;
+            text-decoration: none;
+            margin-right: 30px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            color: #f069b3;
+            border-bottom: 2px solid #f069b3;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .project-item {
+            display: flex;
+            align-items: center;
+            background: #ffa2cd69; 
+            border: 1px solid #ecb9d5; 
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .project-item img {
+            border-radius: 12px;
+            width: 200px; 
+            height: auto;
+            margin-left: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .project-content {
+            flex: 1;
+        }
+        .project-content h3 {
+            margin: 0;
+            color: #e26bad;
+            font-size: 1.5em;
+        }
+        .project-content p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        @media (max-width: 768px) {
+            .project-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .project-item img {
+                margin: 10px 0 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PROJECTS</h1>
+        </header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="page2.html">Experience</a>
+            <a href="page3.html">Projects</a>
+            <a href="page4.html">Contact</a>
+        </nav>
+        <section class="section">
+            <div class="project-item">
+                <div class="project-content">
+                    <h3>Mini projects การวัดความชื้นและอุณหภูมิโดยใช้ DHT22 กับ PIC16F877A</h3>
+                    <p>โปรเจคนี้นำเสนอการวัดความชื้นในห้องและอุณหภูมิ โดยนำ DHT22 กับ PIC16F877A มาประยุกต์ใช้ด้วยกันเพื่อให้มีความแม่นยำมากขึ้นโดยสร้างจากการเขียนโปรแกรม</p>
+                </div>
+                <img src="p1.png" alt="Project 1 Image">
+            </div>
+            <div class="project-item">
+                <div class="project-content">
+                    <h3>Mini projects เซนเซอร์ตรวจจับควันและการสั่นสะเทือน</h3>
+                    <p>โปรเจคนี้นำเสนอการทำงานเมื่อเกิดเหตุไฟไหม้ ถ้าพบควันจะมีการสั่นสะเทือนโดยจะแจ้งเตือนผ่านทางไลน์โดยเราสามารถถามเบอร์รถดับเพลิงและเบอร์รถพยาบาลและยังสามารถรับคำสั่งเปิดน้ำ / ปิดน้ำผ่านทางไลน์ได้</p>
+                </div>
+                <img src="p2.png" alt="Project 2 Image">
+            </div>
+        </section>
+    </div>
+</body>
+</html>
